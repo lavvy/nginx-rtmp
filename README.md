@@ -17,7 +17,7 @@ docker run -d -p 1935:1935 datarhei/nginx-rtmp
 docker run -d -p 1935:1935 datarhei/nginx-rtmp:armhf
  ```
 
-## Streaming-Example
+## Streaming-Example. 
 
 * Send a stream:
 
@@ -28,5 +28,5 @@ ffmpeg -i input -c copy -f flv rtmp://localhost:1935/live/input
 * Receive a stream:
  
  ```sh
-ffmpeg -i rtmp://localhost:1935/live/input -c copy -f flv output
+ffmpeg -i rtmp://localhost:1935/live/input -c copy -f flv output 
  ```
